@@ -13,9 +13,7 @@ import scala.concurrent.ExecutionContext;
 
 public class CarCategoryActor extends AbstractActorWithTimers
 {
-    public static final String LINE_SEPARATOR=System.getProperty("line.separator");
     public static final int MAX_MESSAGES=5;
-
     public static final int TIMER_FREQ_SEC=60;
     private static final String TIMER_KEY="flush";
     private static final class Flush { }
@@ -77,8 +75,7 @@ public class CarCategoryActor extends AbstractActorWithTimers
         synchronized (categoryName.intern())
         {
             if (destination==null) destination=new FileWriter(categoryName + ".txt",true);
-            for (int index=0;index<nextIndex;index++)
-            { destination.append(messages[index]); destination.append(LINE_SEPARATOR); }
+            for (String message : messages) destination.append(message);
             if (this.destination==null) ((Closeable)destination).close();
         }
     }

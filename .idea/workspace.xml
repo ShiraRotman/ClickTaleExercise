@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java" line="86" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f7076967-8b5c-46de-a8f3-f8625f8c8c86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClickTaleExercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ClickTaleExercise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/res/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rotman/shira/akka/CarCategoryActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotman/shira/akka/CarCategoryActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarCategoryActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+            <state relative-caret-position="1309">
+              <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,10 +32,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java">
+        <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="-1071">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/rotman/shira/akka/CarWatcherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="43" column="87" lean-forward="true" selection-start-line="43" selection-start-column="87" selection-end-line="43" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,10 +53,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java">
+        <entry file="file://$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
+            <state relative-caret-position="340">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,9 +84,10 @@
         <option value="$PROJECT_DIR$/application.conf" />
         <option value="$PROJECT_DIR$/src/main/rotman/shira/akka/CarWatcherActor.java" />
         <option value="$PROJECT_DIR$/src/CarWatcherActor.java" />
-        <option value="$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java" />
         <option value="$PROJECT_DIR$/src/rotman/shira/akka/CarCategoryActor.java" />
         <option value="$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java" />
+        <option value="$PROJECT_DIR$/test/rotman/shira/akka/CarWatcherTest.java" />
+        <option value="$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java" />
       </list>
     </option>
   </component>
@@ -154,7 +167,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550913570896" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550937419164" />
     <property name="last_opened_file_path" value="C:/Downloads/hamcrest-2.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -180,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CarWatcherTest">
     <configuration name="CarCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClickTaleExercise" />
       <extension name="coverage">
@@ -196,9 +209,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarCategoryTest.testCarCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickTaleExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rotman.shira.akka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rotman.shira.akka" />
+      <option name="MAIN_CLASS_NAME" value="rotman.shira.akka.CarCategoryTest" />
+      <option name="METHOD_NAME" value="testCarCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarCategoryTest.testFlushTimer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickTaleExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rotman.shira.akka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rotman.shira.akka" />
+      <option name="MAIN_CLASS_NAME" value="rotman.shira.akka.CarCategoryTest" />
+      <option name="METHOD_NAME" value="testFlushTimer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarWatcherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickTaleExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rotman.shira.akka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rotman.shira.akka" />
+      <option name="MAIN_CLASS_NAME" value="rotman.shira.akka.CarWatcherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarWatcherTest.testCarWatcher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickTaleExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rotman.shira.akka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rotman.shira.akka" />
+      <option name="MAIN_CLASS_NAME" value="rotman.shira.akka.CarWatcherTest" />
+      <option name="METHOD_NAME" value="testCarWatcher" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CarWatcherTest" />
+        <item itemvalue="JUnit.CarWatcherTest.testCarWatcher" />
         <item itemvalue="JUnit.CarCategoryTest" />
+        <item itemvalue="JUnit.CarCategoryTest.testFlushTimer" />
+        <item itemvalue="JUnit.CarCategoryTest.testCarCategory" />
       </list>
     </recent_temporary>
   </component>
@@ -216,27 +296,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarCategoryTest - 2019.02.23 at 10h 47m 30s.xml">
-      <configuration name="CarCategoryTest" configurationId="JUnit" />
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 09m 20s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarCategoryTest - 2019.02.23 at 10h 55m 42s.xml">
-      <configuration name="CarCategoryTest" configurationId="JUnit" />
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 10m 31s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarCategoryTest - 2019.02.23 at 10h 57m 09s.xml">
-      <configuration name="CarCategoryTest" configurationId="JUnit" />
+    <history-entry file="CarWatcherTest_testCarWatcher - 2019.02.23 at 17h 12m 39s.xml">
+      <configuration name="CarWatcherTest.testCarWatcher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarCategoryTest - 2019.02.23 at 10h 59m 38s.xml">
-      <configuration name="CarCategoryTest" configurationId="JUnit" />
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 25m 19s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarCategoryTest - 2019.02.23 at 11h 19m 33s.xml">
-      <configuration name="CarCategoryTest" configurationId="JUnit" />
+    <history-entry file="CarWatcherTest_testCarWatcher - 2019.02.23 at 17h 27m 51s.xml">
+      <configuration name="CarWatcherTest.testCarWatcher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 32m 01s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 48m 32s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 49m 57s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 50m 58s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarWatcherTest - 2019.02.23 at 17h 52m 26s.xml">
+      <configuration name="CarWatcherTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61103636" visible="true" weight="0.20372751" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61103636" visible="true" weight="0.20372751" />
       <window_info id="Structure" order="1" sideWeight="0.38896367" side_tool="true" weight="0.20372751" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -244,7 +339,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30820996" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4078062" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,26 +362,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarCategoryActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/com_typesafe_akka_akka_actor_2_12_2_5_21.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -297,13 +372,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarCategoryActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit_2.12/2.5.21/akka-testkit_2.12-2.5.21.jar!/akka/testkit/TestKitBase.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/rotman/shira/akka/CarWatcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="87" lean-forward="true" selection-start-line="43" selection-start-column="87" selection-end-line="43" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/rotman/shira/akka/CarCategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rotman/shira/akka/CarWatcherActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
