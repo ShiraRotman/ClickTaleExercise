@@ -4,6 +4,7 @@ import akka.actor.AbstractActorWithTimers;
 import akka.actor.Props;
 import akka.dispatch.Futures;
 
+import java.io.Closeable;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Duration;
@@ -22,15 +23,19 @@ public class CarCategoryActor extends AbstractActorWithTimers
     private final ExecutionContext loggingDispatcher;
     private final Flush flushObj=new Flush();
     private final String[] messages=new String[MAX_MESSAGES];
+    private final Appendable destination;
     private String categoryName; int nextIndex=0;
 
     public CarCategoryActor(String categoryName,String dispatcherID)
+    { this(categoryName,dispatcherID,null); }
+
+    CarCategoryActor(String categoryName,String dispatcherID,Appendable destination)
     {
         if ((categoryName==null)||(categoryName.trim().equals("")))
             throw new NullPointerException("The category name can't be null or empty!");
         if (dispatcherID==null)
             throw new NullPointerException("The logging dispatcher ID can't be null!");
-        this.categoryName=categoryName;
+        this.categoryName=categoryName; this.destination=destination;
         loggingDispatcher=getContext().getSystem().dispatchers().lookup(dispatcherID);
         if (loggingDispatcher==null)
             throw new IllegalArgumentException("Dispatcher doesn't exist for ID: " + dispatcherID);
@@ -38,7 +43,10 @@ public class CarCategoryActor extends AbstractActorWithTimers
     }
 
     public static Props props(String categoryName,String dispatcherID)
-    { return Props.create(CarCategoryActor.class,()->new CarCategoryActor(categoryName,dispatcherID)); }
+    { return Props.create(CarCategoryActor.class,()->new CarCategoryActor(categoryName,dispatcherID,null)); }
+
+    static Props props(String categoryName,String dispatcherID,Appendable destination)
+    { return Props.create(CarCategoryActor.class,()->new CarCategoryActor(categoryName,dispatcherID,destination)); }
 
     @Override public Receive createReceive()
     {
@@ -65,12 +73,13 @@ public class CarCategoryActor extends AbstractActorWithTimers
     private void performLogging(String[] messages) throws IOException
     {
         //String categoryName=getSelf().path().name().intern();
+        Appendable destination=this.destination;
         synchronized (categoryName.intern())
         {
-            FileWriter destination=new FileWriter(categoryName + ".txt",true);
-            for (String message : messages)
-            { destination.write(message); destination.write(LINE_SEPARATOR); }
-            destination.close();
+            if (destination==null) destination=new FileWriter(categoryName + ".txt",true);
+            for (int index=0;index<nextIndex;index++)
+            { destination.append(messages[index]); destination.append(LINE_SEPARATOR); }
+            if (this.destination==null) ((Closeable)destination).close();
         }
     }
 }
