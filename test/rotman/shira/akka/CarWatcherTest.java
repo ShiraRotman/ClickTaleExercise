@@ -41,6 +41,15 @@ public class CarWatcherTest
             return null;
         });
         testedActor.tell(Boolean.TRUE,category1Probe.getRef());
+        testedActor.tell(Boolean.TRUE,category2Probe.getRef());
+        category1Probe.within(Duration.ofSeconds(12),()->
+        {
+            category1Probe.expectMsg(Boolean.TRUE);
+            category2Probe.expectMsg(Boolean.TRUE);
+            return null;
+        });
+        testedActor.tell(Boolean.TRUE,category1Probe.getRef());
         category1Probe.expectTerminated(Duration.ofSeconds(7),category2Probe.getRef());
+        category1Probe.expectMsg(Duration.ofSeconds(12),Boolean.TRUE);
     }
 }
